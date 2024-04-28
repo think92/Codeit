@@ -20,7 +20,8 @@ const redButtonStyle = {
   color : '#ff4664'
 }
 
-function Button({children, onClick}){
+function Button({children, onClick, color}){
+  const style = color ==='red' ? redButtonStyle : blueButtonStyle
   return <button style={style} onClick={onClick}>
     {children}
     </button>;
